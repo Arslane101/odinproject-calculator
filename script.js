@@ -66,7 +66,7 @@ liste.forEach((button) =>{
                 input.value= input.value + button.textContent
             else if (input.value !== "" && 
                 signs.every(num => document.getElementById(num).disabled === false)=== false ){
-                        nb1 = parseInt(input.value)
+                        nb1 = Number(input.value)
                         input.value = button.textContent
                     sign = enabledchecker(signs)
                     enable(signs)
@@ -79,7 +79,7 @@ liste.forEach((button) =>{
             disable(button.id,signs)
             if(nb1 !== 0 && result === 0 || button.id === "=" ){
                 enable(signs)
-                nb2 = parseInt(input.value)
+                nb2 = Number(input.value)
                 if(sign !==0 ){
                     result = operate(nb1,nb2,sign)
                     console.log(result)
@@ -101,7 +101,8 @@ liste.forEach((button) =>{
                 input.value = ""
                 sign = 0
             }
-            
+        else if (button.id === "DEL") input.value = input.value.slice(0,-1)
+        
             
             
 
