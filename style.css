@@ -1,0 +1,25 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    gap: 10px;
+}
+button {
+    display: flex;
+    flex: 0 0 6.25%;
+    aspect-ratio: 1/1;
+
+
+}
+
+.toggled {
+    outline:none;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
