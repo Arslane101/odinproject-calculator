@@ -39,6 +39,9 @@ input.style.width = "200px"
 input.style.height = "50px"
 input.style.color = "black"
 input.style.boxSizing = "border-block"
+input.style.textAlign = "center"
+input.style.fontWeight = "bold"
+input.style.fontSize = "20px"
 container.appendChild(input)
 const buttons = document.createElement("div")
 buttons.id= "buttons"
@@ -47,7 +50,10 @@ for (let i=0;i<symbols.length;i++){
     button.style.flex = "1 0 calc(100% /" + 6 + ")"
     button.style.border= "1px solid gray"
     button.style.boxSizing = "border-block"
-    button.style.textAlign= "center"
+    button.style.alignItems = "center"
+    button.style.justifyContent= "center"
+    button.style.fontWeight = "bold"
+    button.style.fontSize = "25px"
     button.textContent= symbols[i]
     button.id = symbols[i]
     buttons.appendChild(button)
